@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Слайдер</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="intro">
+        <p class="kicker">Практика DOM & JavaScript</p>
+        <h1>Гнучкий слайдер із навігацією та жестами</h1>
+        <p class="subtitle">
+          Кнопки, індикатори, автоплей, клавіатура та свайпи — усе в одному компактному
+          компоненті.
+        </p>
+      </header>
+
+      <section class="slider" aria-roledescription="carousel">
+        <div class="slider__viewport" data-slider-viewport>
+          <div class="slider__track" data-slider-track>
+            <figure class="slide" data-slide>
+              <img src="assets/slide-1.svg" alt="Заглушка фото 1" />
+              <figcaption>Кадр для фото 1</figcaption>
+            </figure>
+            <figure class="slide" data-slide>
+              <img src="assets/slide-2.svg" alt="Заглушка фото 2" />
+              <figcaption>Кадр для фото 2</figcaption>
+            </figure>
+            <figure class="slide" data-slide>
+              <img src="assets/slide-3.svg" alt="Заглушка фото 3" />
+              <figcaption>Кадр для фото 3</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="slider__controls">
+          <button class="btn" type="button" data-action="prev" aria-label="Попередній слайд">
+            ← Назад
+          </button>
+          <button class="btn btn--primary" type="button" data-action="toggle" aria-pressed="false">
+            ⏸ Пауза
+          </button>
+          <button class="btn" type="button" data-action="next" aria-label="Наступний слайд">
+            Вперед →
+          </button>
+        </div>
+
+        <div class="slider__indicators" role="tablist" aria-label="Слайди">
+          <button class="dot" type="button" data-slide-to="0" role="tab" aria-selected="true"></button>
+          <button class="dot" type="button" data-slide-to="1" role="tab" aria-selected="false"></button>
+          <button class="dot" type="button" data-slide-to="2" role="tab" aria-selected="false"></button>
+        </div>
+
+        <p class="slider__hint">Підказка: свайпайте або тягніть мишею, щоб змінити кадр.</p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
