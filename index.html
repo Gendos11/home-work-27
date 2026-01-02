@@ -35,23 +35,8 @@
           </div>
         </div>
 
-        <div class="slider__controls">
-          <button class="btn" type="button" data-action="prev" aria-label="Попередній слайд">
-            ← Назад
-          </button>
-          <button class="btn btn--primary" type="button" data-action="toggle" aria-pressed="false">
-            ⏸ Пауза
-          </button>
-          <button class="btn" type="button" data-action="next" aria-label="Наступний слайд">
-            Вперед →
-          </button>
-        </div>
-
-        <div class="slider__indicators" role="tablist" aria-label="Слайди">
-          <button class="dot" type="button" data-slide-to="0" role="tab" aria-selected="true"></button>
-          <button class="dot" type="button" data-slide-to="1" role="tab" aria-selected="false"></button>
-          <button class="dot" type="button" data-slide-to="2" role="tab" aria-selected="false"></button>
-        </div>
+        <div class="slider__controls" data-slider-controls></div>
+        <div class="slider__indicators" data-slider-indicators></div>
 
         <p class="slider__hint">Підказка: свайпайте або тягніть мишею, щоб змінити кадр.</p>
       </section>
